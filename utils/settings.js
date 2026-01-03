@@ -923,10 +923,8 @@ const setting = [
       facebook_secret: "",
       nextauth_secret: "",
       next_api_base_url: "http://localhost:5055/api",
-      stripe_key:
-        process.env.NEXT_AUTH_STRIPE_KEY || "",
-      stripe_secret:
-        process.env.NEXT_AUTH_STRIPE_SECRET || "",
+      stripe_key: "",
+      stripe_secret: "",
       stripe_status: true,
       razorpay_status: false,
       razorpay_id: "",
