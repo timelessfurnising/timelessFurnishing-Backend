@@ -424,6 +424,7 @@ const loginCustomer = async (req, res) => {
 
 const forgetPassword = async (req, res) => {
   const email = (req.body.email || "").toLowerCase();
+  console.log('email',email);
   const isAdded = await Customer.findOne({ email });
   if (!isAdded) {
     return res.status(404).send({
